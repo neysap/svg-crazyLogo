@@ -63,6 +63,8 @@ import('inquirer').then((inquirerModule) => {
      const logoSvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         ${shape.render()}
+        <text x="150" y="100" text-anchor="middle" fill="${shape.textColor}">
+        ${shape.text}</text>
       </svg>`;
       
 
