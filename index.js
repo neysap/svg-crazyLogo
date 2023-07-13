@@ -55,6 +55,8 @@ import('inquirer').then((inquirerModule) => {
 
       // Set the color for the shape and text
       shape.setColor(answers.shapeColor);
+      shape.setTextColor(answers.textColor);
+      shape.setText(answers.text);
       // Set the color for the text
 
       // Generate the SVG string for the logo
@@ -62,7 +64,7 @@ import('inquirer').then((inquirerModule) => {
       <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
         ${shape.render()}
       </svg>`;
-      // Replace with the actual method to generate the SVG
+      
 
       // Save the SVG to a file named 'logo.svg'
       fs.writeFileSync('logo.svg', logoSvg);
