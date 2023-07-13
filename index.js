@@ -58,7 +58,10 @@ import('inquirer').then((inquirerModule) => {
       // Set the color for the text
 
       // Generate the SVG string for the logo
-      const logoSvg = shape.render();
+     const logoSvg = `<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+      <svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+        ${shape.render()}
+      </svg>`;
       // Replace with the actual method to generate the SVG
 
       // Save the SVG to a file named 'logo.svg'
